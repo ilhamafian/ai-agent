@@ -13,7 +13,7 @@ export async function POST(req: Request) {
   console.log("In tools: ", tools);
 
   const result = streamText({
-    model: openai("gpt-4o"),
+    model: openai("gpt-3.5-turbo"),
     messages,
     // forward system prompt and tools from the frontend
     toolCallStreaming: true,
